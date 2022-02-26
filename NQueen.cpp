@@ -23,8 +23,7 @@ size_t NQ::n() {
 
 
 bool NQ::valid(size_t row, size_t col) {
-    //check row and col
-    for (size_t i = 0; i < board.size(); ++i) if (board[i][col]) return false;
+    //check row
     for (size_t j = 0; j < board.size(); ++j) if (board[row][j]) return false;
 
     //check left up diagonal
